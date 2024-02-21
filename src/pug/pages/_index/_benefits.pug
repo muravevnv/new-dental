@@ -22,11 +22,12 @@
 
 section.benefits.section 
   .container 
-    .benefits__list 
-      for item in benefits
-        .benefits__item 
-          .benefits__item-img
-            img(src=`images/benefits/benefits-0${item.id}.png`, alt="")
-          .benefits__item-title= item.title
-            span= item.title_detail
-          .benefits__item-btn.btn.btn--outline= item.btn
+    .benefits__list.js-benefits-slider 
+      .swiper-wrapper
+        for item in benefits
+          .benefits__item.swiper-slide 
+            .benefits__item-img
+              img(src=`images/benefits/benefits-0${item.id}.png`, alt="")
+            .benefits__item-title= item.title
+              span= item.title_detail
+            .benefits__item-btn.btn.btn--outline= item.btn

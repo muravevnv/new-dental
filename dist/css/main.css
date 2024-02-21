@@ -349,7 +349,6 @@ select {
 
 .link {
   position: relative;
-  white-space: nowrap;
 }
 .link::before {
   content: "";
@@ -544,7 +543,7 @@ h1 {
 .header {
   padding: 24px 0;
   background-color: var(--color-whte);
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid #E5E7EB;
 }
 .header .container {
   display: -webkit-box;
@@ -870,6 +869,7 @@ h1 {
 
 .benefits {
   padding: 20px 0;
+  overflow: hidden;
 }
 .benefits__list {
   display: grid;
@@ -1449,7 +1449,20 @@ h1 {
   .hero__item-detail {
     width: 100%;
   }
+  .benefits__item {
+    padding: 16px;
+  }
+  .benefits__item-img img {
+    height: 150px;
+  }
+  .benefits__item-title {
+    font-size: 20px;
+  }
   .services-cards {
+    gap: 12px;
+  }
+  .team-list {
+    grid-template-columns: repeat(2, 1fr);
     gap: 12px;
   }
   .s-team__all {
@@ -1560,10 +1573,6 @@ h1 {
   .services-card__title {
     font-size: 16px;
   }
-  .team-list {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-  }
   .feedback__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1629,7 +1638,7 @@ h1 {
     cursor: pointer;
   }
 }
-@media (max-width: 560px) {
+@media (max-width: 600px) {
   .team-list {
     grid-template-columns: 1fr;
   }

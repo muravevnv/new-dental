@@ -10,6 +10,22 @@ if (document.querySelector(".js-hero-slider")) {
   });
 }
 
+if (document.querySelector(".js-benefits-slider")) {
+    let benefitsSlider = new Swiper(".js-benefits-slider", {
+      slidesPerView: 1,
+      spaceBetween: 12,
+      breakpoints: {
+        767: {
+            slidesPerView: 2,
+            spaceBetween: 16,
+        },
+        1280: {
+            slidesPerView: 3,
+        }
+      }
+    });
+  }
+
 //Табы
 if (document.querySelector('[data-role*="tabs"]')) {
   let tabsContainers = document.querySelectorAll('[data-role*="tabs"]');
@@ -59,6 +75,29 @@ ymaps.ready(init);
 function init() {
   var myMap = new ymaps.Map("map", {
     center: [55.16444, 61.436843],
-    zoom: 10,
+    zoom: 12,
   });
+
+  myMap.geoObjects
+
+  .add(new ymaps.Placemark([55.178551611964316, 61.45060215767084], {
+        balloonContent: 'ул. Котина, 26'
+    }, {
+        preset: 'islands#icon',
+        iconColor: '#0095b6'
+    }))
+    
+    .add(new ymaps.Placemark([55.17094280699047, 61.44534799572664], {
+        balloonContent: 'ул. Салютная, 26'
+    }, {
+        preset: 'islands#icon',
+        iconColor: '#0095b6'
+    }))
+    
+    .add(new ymaps.Placemark([55.158659362006254, 61.46926322640924], {
+        balloonContent: 'пр. Ленина, 3'
+    }, {
+        preset: 'islands#icon',
+        iconColor: '#0095b6'
+    }))
 }

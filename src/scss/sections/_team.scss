@@ -7,12 +7,12 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  @include media(sm) {
+  @include media(md) {
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
   }
 
-  @media(max-width: 560px) {
+  @media(max-width: 600px) {
     grid-template-columns: 1fr;
   }
 }
