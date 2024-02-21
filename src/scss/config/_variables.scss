@@ -1,0 +1,49 @@
+//Global
+$font-main: "Roboto", sans-serif;
+$font-size: 16px;
+$transition: 0.3s ease-in-out;
+$line-height: normal;
+
+//Color
+$black: #373740;
+$text: rgba(#373740, 0.6);
+$primary: #9d097c;
+$secondary: #cd1ba5;
+$green-bg: #c7cdc3;
+$white: #ffffff;
+$border: #cccfdc;
+
+// Z-index
+$z-index-header: 100;
+$z-index-menu: 200;
+$z-index-dropdown: 300;
+$z-index-modal: 1000;
+
+$colors: (
+  "whte": #fff,
+  "blck": #111827,
+  "primary": #3b89e4,
+  "primary-light": #B2CEEF,
+  "border": #D1D5DB,
+  "border-light": #C0D7F1,
+  "grey": #6B7280,
+  "grey-light": #F3F4F6,
+  "grey-dark": #4B5563,
+  "secondary": #ffefe5,
+  "green": #32ce18,
+  "red": #E9585B,
+  "yellow": #ffc61a,
+);
+
+//========================================================================================================================================================
+
+:root {
+  @if $colors {
+    @each $key, $value in $colors {
+      --color-#{$key}: #{$value};
+      --color-#{$key}--rgb: #{hextorgb($value)};
+    }
+  }
+
+  --font-primary: #{$font-main};
+}

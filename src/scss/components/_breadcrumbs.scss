@@ -1,0 +1,37 @@
+.breadcrumbs {
+  margin: 25px 0;
+
+  &-list {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &-item {
+    position: relative;
+    opacity: .6;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 5px;
+    white-space: nowrap;
+
+    &::after {
+      content: '-';
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+      padding-right: 0;
+      pointer-events: none;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

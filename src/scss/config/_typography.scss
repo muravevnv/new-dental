@@ -1,0 +1,40 @@
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 1.06;
+  font-weight: 500;
+
+  @include media(lg) {
+    font-size: 42px;
+  }
+
+  @include media(md)  {
+    font-size: 36px;
+  }
+
+  @media(max-width: 389px) {
+    font-size: 28px;
+  }
+}
+
+.h2 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.22;
+
+  @include media(md) {
+    font-size: 28px;
+  }
+}
+
+.h3 {
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 500;
+}

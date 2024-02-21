@@ -1,0 +1,35 @@
+-
+  var advantages = [
+    {
+      id: 1,
+      title: 'Лучшая стоматология в Челябинске',
+      desc: 'Укажите свой номер телефона, мы перезвоним и подберём'
+    },
+    {
+      id: 2,
+      title: 'Более 35 высоко квалифицированных врачей',
+      desc: 'Укажите свой номер телефона, мы перезвоним и подберём'
+    },
+    {
+      id: 3,
+      title: 'Система лояльности',
+      desc: 'Укажите свой номер телефона, мы перезвоним и подберём'
+    },
+    {
+      id: 4,
+      title: 'Лицензионные документы',
+      desc: 'Укажите свой номер телефона, мы перезвоним и подберём'
+    },
+  ]
+
+section.advantages.section 
+  .container 
+    .section__head 
+      h2.advantages__title.h2 Преимущества
+    .advantages__list 
+      for item in advantages
+        .advantages__item 
+          .advantages__item-icon 
+            img(src=`images/advantages/advantages-0${item.id}.svg`, alt="")
+          .advantages__item-title= item.title
+          .advantages__item-desc= item.desc

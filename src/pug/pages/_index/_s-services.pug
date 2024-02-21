@@ -1,0 +1,57 @@
+-
+  var servicesList = [
+    {
+      id: 1,
+      title: 'Терапия'
+    },
+    {
+      id: 2,
+      title: 'Протезирование'
+    },
+    {
+      id: 3,
+      title: 'Хирургия'
+    },
+    {
+      id: 4,
+      title: 'Имплантология'
+    },
+    {
+      id: 5,
+      title: 'Ортодонтия'
+    },
+    {
+      id: 6,
+      title: 'Пародонтология'
+    },
+    {
+      id: 7,
+      title: 'Гигиена'
+    },
+    {
+      id: 8,
+      title: 'Фторирование'
+    },
+  ]
+
+.s-servcies.section(data-role="tabs") 
+  .container
+    .section__head
+      h2.s-services__title.h2 Услуги
+      .s-services__tabs-controls.tab-controls
+        button(type="button" data-tabs-control="1" class="s-services__tab-control tab-control is-selected") Взрослым
+        button(type="button" data-tabs-control="2" class="s-services__tab-control tab-control") Детям
+    .s-services__content.is-open(data-tabs-panel="1")
+      .services-cards 
+        for item in servicesList
+          .services-card
+            .services-card__img 
+              img(src=`images/services/services-0${item.id}.svg`, alt="")
+            a(href="").services-card__title.link= item.title
+    .s-services__content(data-tabs-panel="2")
+      .services-cards 
+        for item in servicesList
+          .services-card
+            .services-card__img 
+              img(src=`images/services/services-default.svg`, alt="")
+            a(href="").services-card__title.link= item.title

@@ -1,0 +1,126 @@
+.color-red {
+  color: var(--color-red);
+}
+
+.color-primary {
+  color: var(--color-primary);
+}
+
+.link {
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--color-border);
+  transition: 0.15s;
+
+  @media (any-hover: hover) {
+    &:hover {
+      border-color: transparent;
+      color: var(--color-primary);
+      transition: 0.25s;
+    }
+  }
+
+  @include media(sm) {
+    padding-bottom: 0;
+  }
+}
+
+.link-primary {
+  padding-bottom: 2px;
+  color: var(--color-primary);
+  border-bottom: 1px solid var(--color-border-light);
+  transition: 0.15s;
+
+  @media (any-hover: hover) {
+    &:hover {
+      border-color: transparent;
+      color: var(--color-blck);
+      transition: 0.25s;
+    }
+  }
+
+  @include media(sm) {
+    padding-bottom: 0;
+  }
+}
+
+.section {
+  padding: 48px 0;
+
+  @include media(md) {
+    padding: 32px 0;
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 36px;
+    gap: 12px;
+
+    @include media(md) {
+      margin-bottom: 24px;
+    }
+
+    @include media(sm) {
+      // flex-direction: column;
+      // align-items: flex-start;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.tab-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tab-control {
+  padding: 10px 18px;
+  background-color: transparent;
+  border: 2px solid var(--color-primary-light);
+  border-radius: 12px;
+  font-weight: 500;
+  color: var(--color-primary);
+
+  &.is-selected {
+    background: rgba(178, 206, 239, 0.32);
+  }
+}
+
+.slider-btn {
+  --size: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--size);
+  height: var(--size);
+  outline: none;
+  background-color: var(--color-whte);
+  border-radius: 50%;
+  flex-shrink: 0;
+  transition: .25s;
+
+  svg {
+    --size: 24px;
+    display: block;
+    width: var(--size);
+    height: var(--size);
+  }
+
+  @include media(md) {
+    --size: 44px;
+
+    svg {
+      --size: 20px;
+    }
+  }
+  
+  @media(any-hover: hover) {
+    &:hover {
+      background-color: var(--color-primary);
+      color: var(--color-whte);
+      transition: .25s;
+    }
+  }
+}

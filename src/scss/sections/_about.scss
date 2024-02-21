@@ -1,0 +1,75 @@
+.s-about {
+
+  &__wrapper {
+    width: 100%;
+    padding-bottom: 96px;
+    background: url('../images/about/about-logo.png') right 100px bottom 0px / 480px no-repeat;
+
+    @include media(lg) {
+      background-size: 250px;
+      background-position: right bottom;
+    }
+
+    @include media(sm) {
+      padding-bottom: 308px;
+      background-position: center bottom;
+    }
+  }
+
+  &__info {
+    max-width: 640px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    @include media(md) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__desc {
+    margin-bottom: 32px;
+
+    @include media(md) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__text {
+
+    @include media(sm) {
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;  
+      overflow: hidden;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.25;
+
+      span {
+        color: var(--color-primary);
+      }
+
+      + p {
+        margin-top: 16px;
+      }
+    }
+  }
+
+  &__read {
+    display: none;
+
+    @include media(sm) {
+      display: block;
+      margin-top: 4px;
+      padding-bottom: 2px;
+      border-bottom: 1px solid var(--color-border-light);
+      color: var(--color-primary);
+      font-weight: 500;
+      cursor: pointer;
+    }
+  }
+}

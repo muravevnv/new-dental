@@ -1,0 +1,251 @@
+.header {
+  padding: 24px 0;
+  background-color: var(--color-whte);
+  border-bottom: 1px solid var(--color-border);
+
+  @include media(lg) {
+    padding: 16px 0;
+  }
+
+  .container {
+    display: flex;
+    align-items: flex-end;
+
+    @include media(lg) {
+      align-items: center;
+    }
+  }
+
+  &__logo {
+    width: 195px;
+    flex-shrink: 0;
+    margin-right: 64px;
+
+    @include media(xl) {
+      margin-right: 32px;
+      width: 160px;
+    }
+
+    @include media(sm)  {
+      width: 114px;
+    }
+  }
+
+  &__content {
+    width: 100%;
+  }
+
+  &__top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__tel {
+    display: block;
+    margin: 0 20px 0 auto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.44;
+    color: var(--color-primary);
+    transition: .25s;
+
+    svg {
+      display: none;
+    }
+
+    @media(any-hover: hover) {
+      &:hover {
+        color: var(--color-primary-light);
+        transition: .25s;
+      }
+    }
+
+    @include media(lg) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      font-size: 0;
+      border: 0;
+      background-color: var(--color-primary-light);
+      margin-right: 8px;
+      border-radius: 4px;
+      
+      svg {
+        display: block;
+      }
+    }
+  }
+
+  &__btn {
+
+    svg {
+      display: none;
+    }
+
+    @include media(lg) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 4px;
+      font-size: 0;
+      margin-right: 8px;
+      gap: 0;
+
+      svg {
+        display: block;
+      }
+    }
+  }
+
+  &__burger {
+    display: none;
+
+    @include media(lg)  {
+      display: block;
+      position: relative;
+      width: 40px;
+      height: 40px;
+  
+      span {
+        position: absolute;
+        background-color: var(--color-blck);
+        width: 24px;
+        height: 2px;
+        left: 8px;
+        right: 8px;
+        top: 10px;
+        transition: .25s;
+
+        &:nth-of-type(1) {
+          top: 12px;
+        }
+
+        &:nth-of-type(2) {
+          top: 20px;
+        }
+
+        &:nth-of-type(3) {
+          top: 28px;
+        }
+      }
+
+      &.is-active {
+
+        span {
+          transition: .25s;
+
+          &:nth-of-type(1) {
+            display: none;
+          }
+
+          &:nth-of-type(2) {
+            top: 18px;
+            transform: rotate(45deg);
+          }
+        
+          &:nth-of-type(3) {
+            top: 18px;
+            transform: rotate(-45deg);
+            
+          }
+        }
+      }
+    }
+  }
+
+  &__address {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @include media(lg) {
+      display: none;
+    }
+  }
+
+  &__address-item {
+    color: var(--color-primary);
+    padding-bottom: 2px;
+    border-bottom: 1px solid var(--color-primary-light);
+    font-weight: 500;
+    line-height: 1.25;
+  }
+
+  &__menu {
+    width: 100%;
+    margin-top: 12px;
+
+    @include media(lg) {
+      position: fixed;
+      inset: 82px 0 0 0;
+      width: 100%;
+      height: calc(100dvh - 82px);
+      background-color: var(--color-whte);
+      z-index: 10;
+      margin-top: 0;
+      padding: 20px 16px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transform: translateX(-100%);
+      transition: .25s ease-in;
+
+      &.is-open {
+        transform: translateX(0);
+        transition: .25s;
+      }
+    }
+  }
+
+  &__nav {
+  }
+
+  &__mob {
+    display: none;
+
+    @include media(lg) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+  }
+
+  &__mob-tel {
+    color: var(--color-primary);
+    font-weight: 500;
+  }
+
+  &__nav-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @include media(lg)  {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+  }
+
+  &__nav-item {
+    padding-bottom: 2px;
+    line-height: 1.25;
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
+
+    span {
+      font-size: 12px;
+      line-height: 1;
+      font-weight: 600;
+    }
+  }
+}

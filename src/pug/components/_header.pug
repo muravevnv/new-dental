@@ -1,0 +1,46 @@
+header.header 
+  .container 
+    a.header__logo(href="#")
+      img(src="images/logo.svg", alt="") 
+    .header__content 
+      .header__top 
+        address.header__address
+          a(href="#" class="link link--light").header__address-item ул. Котина, 26
+          a(href="#" class="link link--light").header__address-item ул. Салютная, 26
+          a(href="#" class="link link--light").header__address-item пр. Ленина, 3 (4 этаж)
+        a.header__tel(href="tel:+735120-04-123") +7 351 20-04-123
+          +svgSprite(24, 24, 'tel')
+        button(type="button").header__btn.btn Записаться на приём
+          +svgSprite(24, 24, 'calendar')
+        button(type="button").header__burger
+          span 
+          span 
+          span 
+      .header__menu 
+        nav.header__nav 
+          ul.header__nav-list 
+            li.header__nav-item 
+              a(href="#" class="link") О клинике
+            li.header__nav-item 
+              a(href="#" class="link") Услуги
+            li.header__nav-item 
+              a(href="#" class="link") Цены
+            li.header__nav-item 
+              a(href="#" class="link") Врачи
+            li.header__nav-item 
+              a(href="#" class="link") Работы врачей
+            li.header__nav-item 
+              a(href="#" class="link") Отзывы
+              span.color-primary 287
+            li.header__nav-item 
+              a(href="#" class="link") Акции
+              span.color-red 4
+            li.header__nav-item 
+              a(href="#" class="link") Блог
+            li.header__nav-item 
+              a(href="#" class="link") Команда
+            li.header__nav-item 
+              a(href="#" class="link") Контакты
+        .header__mob 
+          a.header__mob-tel(href="") +7 351 20-04-123
+          buttot(type="button").header__mob-btn.btn Записаться на приём

@@ -1,0 +1,31 @@
+- 
+  var newsList = [
+    {
+      id: 1,
+      title: 'Новость из блога',
+      desc: 'Короткое описание'
+    },
+    {
+      id: 2,
+      title: 'Новость из блога',
+      desc: 'Короткое описание'
+    },
+    {
+      id: 3,
+      title: 'Новость из блога',
+      desc: 'Короткое описание'
+    },
+  ]
+
+.news.section
+  .container 
+    .section__head 
+      h2.news__title.h2 Новости из блога
+      a.section__link.btn.btn--outline(href="#") Все новости
+    .news__list 
+      for item in newsList
+        .blog-item 
+          a(href="#").blog-item__img
+            img(src=`images/blog/blog-0${item.id}.jpg`, alt="")
+          a(href="#").blog-item__title.link= item.title
+          .blog-item__desc= item.desc

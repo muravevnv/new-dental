@@ -1,0 +1,31 @@
+.news {
+  padding: 72px 0 84px;
+
+  @include media(md) {
+    padding: 48px 0 64px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    @include media(lg) {
+      gap: 12px;
+    }
+
+    @include media(sm) {
+      grid-template-columns: repeat(3, 334px);
+      width: calc(100% + 32px);
+      margin: 0 -16px;
+      padding: 0 16px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+}

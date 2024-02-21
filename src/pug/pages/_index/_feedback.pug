@@ -1,0 +1,16 @@
+.feedback 
+  .container 
+    .feedback__wrapper 
+      .feedback__info
+        h2.feedback__title Первичный осмотр, план лечения и консультация бесплатно
+        .feedback__desc Укажите свой номер телефона, мы перезвоним и подберём для вас удобное время приёма.
+        form.feedback__form(action="#")
+          .form-group 
+            label.form-label
+            input.form-control(type="tel" placeholder="+7 (999) 999-99-99") 
+          button.btn.feedback__btn(type="submit") Записаться
+        .feedback__contacts 
+          span Остались вопросы?
+          a(href="tel:+735120-04-123") +7 351 20-04-123 
+      .feedback__img 
+        img(src="images/feedback/feedback-boy.png", alt="")

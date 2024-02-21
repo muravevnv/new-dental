@@ -1,0 +1,35 @@
+// Vendors
+
+// Config
+@import 'config/variables';
+@import 'config/mixins';
+@import 'config/reset';
+@import 'config/fonts';
+@import 'config/common';
+@import 'config/global';
+@import 'config/typography';
+@import 'config/form';
+
+
+
+// Components
+
+@import 'components/btn';
+@import 'components/slider';
+@import 'components/header';
+@import 'components/footer';
+
+
+//Sections
+@import 'sections/hero';
+@import 'sections/benefits';
+@import 'sections/services';
+@import 'sections/team';
+@import 'sections/advantages';
+@import 'sections/map';
+@import 'sections/feedback';
+@import 'sections/blog';
+@import 'sections/news';
+@import 'sections/about';
+
+// Pages
