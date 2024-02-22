@@ -1,0 +1,46 @@
+-
+  var teamList = [
+    {
+      id: '09',
+      name: 'Савинкова Ольга Борисовна',
+      post: 'Зубной врач'
+    },
+    {
+      id: '10',
+      name: 'Белогубец Гаяне Павловна',
+      post: 'Зубной врачг'
+    },
+    {
+      id: '11',
+      name: 'Задорина Светлана Владимировна',
+      post: 'Зубной врач высшей квалификационной категории'
+    },
+    {
+      id: '12',
+      name: 'Окольникова Лариса Станиславовна',
+      post: 'Зубной врач'
+    },
+    {
+      id: '05',
+      name: 'Трубецкая Анна Александровна',
+      post: 'Врач-стоматолог-терапевт, пародонтолог'
+    },
+    {
+      id: '06',
+      name: 'Трубецкая Анна Александровна',
+      post: 'Врач-стоматолог-терапевт, пародонтолог'
+    },
+  ]
+
+.other-team.section
+  .container 
+    .section__head
+      .other-team__title.h2 Другие врачи
+    .other-team__slider.js-team-slider 
+      .swiper-wrapper 
+        for item in teamList
+          .team-item.swiper-slide 
+            a(href="#").team-item__img 
+              img(src=`images/team/team-${item.id}.jpg`, alt="")
+            a(href="#").team-item__name.link= item.name
+            .team-item__type= item.post 

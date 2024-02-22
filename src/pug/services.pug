@@ -1,0 +1,89 @@
+extends includes/_layout
+
+block content 
+  main.page
+      -
+        var servicesList = [
+          {
+            id: 1,
+            title: 'Терапия'
+          },
+          {
+            id: 2,
+            title: 'Протезирование'
+          },
+          {
+            id: 3,
+            title: 'Хирургия'
+          },
+          {
+            id: 4,
+            title: 'Имплантология'
+          },
+          {
+            id: 5,
+            title: 'Ортодонтия'
+          },
+          {
+            id: 6,
+            title: 'Пародонтология'
+          },
+          {
+            id: 7,
+            title: 'Гигиена'
+          },
+          {
+            id: 8,
+            title: 'Фторирование'
+          },
+        ]
+
+        var servicesKidsList = [
+          {
+            id: 1,
+            title: 'Лечение зубов у детей'
+          },
+          {
+            id: 2,
+            title: 'Профилактика'
+          },
+          {
+            id: 3,
+            title: 'Герметизация фиссур'
+          },
+          {
+            id: 4,
+            title: 'Исправление прикуса'
+          },
+          {
+            id: 5,
+            title: 'Сохранение места'
+          },
+          {
+            id: 6,
+            title: 'Детские коронкия'
+          }
+        ]
+      +breadcrumb(['Главная'], 'Услуги')
+      .servcies.section
+        .container
+          .services__title.page__title.h1 Услуги
+          .services__section 
+            .services__section-title.h2 Для взрослых
+            .services__list
+              for item in servicesList
+                .services-item
+                  .services-item__img 
+                    img(src=`images/services/services-0${item.id}.svg`, alt="")
+                  a(href="").services-item__title.link= item.title
+                  .services-item__price= item.price
+          .services__section 
+            .services__section-title.h2 Для детей
+            .services__list
+              for item in servicesKidsList
+                .services-item
+                  .services-item__img 
+                    img(src=`images/services/services-default.svg`, alt="")
+                  a(href="").services-item__title.link= item.title
+                  .services-item__price= item.price
+      +feedback('feedback-doctor', 'feedback--secondary')

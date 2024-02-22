@@ -1,24 +1,12 @@
-doctype html
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    link(rel="stylesheet", href="css/swiper.min.css")
-    link(href="css/main.css" rel="stylesheet")
-    title Главная
-  body
-    include mixins/_mixins
-    include components/_header
-    main
-      include pages/_index/_hero
-      include pages/_index/_benefits
-      include pages/_index/_s-services
-      include pages/_index/_s-team
-      include pages/_index/_map
-      include pages/_index/_advantages
-      include pages/_index/_feedback
-      include pages/_index/_news
-      include pages/_index/_s-about
-    include components/footer
-    include includes/scripts
+extends includes/_layout
+
+block content 
+  main
+    include pages/_index/_hero
+    include pages/_index/_s-services
+    include pages/_index/_s-team
+    include pages/_index/_map
+    include pages/_index/_advantages
+    include pages/_index/_feedback
+    include pages/_index/_news
+    include pages/_index/_s-about

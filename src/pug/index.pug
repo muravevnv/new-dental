@@ -11,10 +11,24 @@ html(lang="en")
     include mixins/_mixins
     include components/_header
     main
-      section 
+      section(style="padding: 24px 0")
         .container 
           ul 
-            li 
+            li(style="margin-bottom: 8px")
               a(href="main.html") Главная
-    include components/footer
+            li(style="margin-bottom: 8px") 
+              a(href="services.html") Услуги
+            //- li(style="margin-bottom: 8px") 
+            //-   a(href="blog.html") Блог
+            //- li(style="margin-bottom: 8px") 
+            //-   a(href="article.html") Статья
+            //- li(style="margin-bottom: 8px") 
+            //-   a(href="doctors.html") Список врачей
+            li(style="margin-bottom: 8px") 
+              a(href="doctor.html") Карточка врача
+            li(style="margin-bottom: 8px") 
+              a(href="documents.html") Документы
+            li(style="margin-bottom: 8px") 
+              a(href="law.html") Законодательство
+    include components/_footer
     include includes/scripts

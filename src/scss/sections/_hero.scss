@@ -55,13 +55,25 @@
 
   &__item-title {
     margin-bottom: 24px;
+    font-size: 64px;
+    line-height: 1.06;
+    font-weight: 500;
+  
+    @include media(lg) {
+      font-size: 42px;
+    }
+  
+    @include media(md)  {
+      font-size: 36px;
+      margin-bottom: 16px;
+    }
+  
+    @media(max-width: 389px) {
+      font-size: 28px;
+    }
 
     span {
       color: var(--color-primary);
-    }
-
-    @include media(md) {
-      margin-bottom: 16px;
     }
   }
 

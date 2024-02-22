@@ -41,7 +41,7 @@
     margin-bottom: 6px;
   }
 
-  &__post {
+  &__type {
     line-height: 1.25;
     color: var(--color-grey);
   }
@@ -55,5 +55,12 @@
     @include media(md) {
       margin-top: 24px;
     }
+  }
+}
+
+.other-team {
+
+  &__slider {
+    overflow: hidden;
   }
 }

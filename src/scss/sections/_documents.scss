@@ -1,0 +1,129 @@
+.documents {
+  &__title {
+    margin-bottom: 40px;
+
+    @include media(md) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
+
+    @include media(md) {
+      flex-direction: column;
+    }
+  }
+
+  &__main {
+    width: 100%;
+  }
+
+  &__section {
+    &-title {
+      margin-bottom: 24px;
+
+      @include media(md) {
+        margin-bottom: 16px;
+      }
+    }
+
+    + .documents__section {
+      margin-top: 42px;
+      padding-top: 40px;
+      border-top: 1px solid var(--color-border);
+
+      @include media(md) {
+        margin-top: 32px;
+        padding-top: 32px;
+      }
+    }
+  }
+
+  &__item {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-primary);
+    border-color: var(--color-primary-light);
+
+    // @media (any-hover: hover) {
+    //   &:hover {
+    //     color: var(--color-blck);
+    //   }
+    // }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    @include media(md) {
+      gap: 18px;
+    }
+  }
+
+  &__form {
+    max-width: 440px;
+    width: 100%;
+  }
+}
+
+.asside-form {
+  border-radius: 12px;
+  background: linear-gradient(262deg, #cae0f3 0%, #eaeef3 100%);
+  width: 100%;
+  padding: 20px 24px;
+
+  @include media(md) {
+    padding: 32px 12px;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+
+  &__desc {
+    color: var(--color-grey-dark);
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.44;
+
+    @include media(md) {
+      margin-bottom: 24px;
+      font-size: 16px;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__btn {
+    @include media(md) {
+      width: 150px;
+    }
+  }
+
+  &__tel {
+    margin-top: 32px;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+
+    a {
+      color: var(--color-primary);
+      border-color: var(--color-primary-light);
+    }
+  }
+}

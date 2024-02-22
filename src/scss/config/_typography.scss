@@ -5,9 +5,8 @@ p {
   margin: 0;
 }
 
-h1 {
-  font-size: 64px;
-  line-height: 1.06;
+.h1 {
+  font-size: 56px;
   font-weight: 500;
 
   @include media(lg) {
@@ -16,10 +15,6 @@ h1 {
 
   @include media(md)  {
     font-size: 36px;
-  }
-
-  @media(max-width: 389px) {
-    font-size: 28px;
   }
 }
 

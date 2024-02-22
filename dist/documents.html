@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link href="css/main.css" rel="stylesheet">
-    <title>Главная</title>
+    <title>Новая стоматология</title>
   </head>
-  <body>
+  <body> 
     <header class="header"> 
       <div class="container"> <a class="header__logo" href="#"><img src="images/logo.svg" alt=""></a>
         <div class="header__content"> 
@@ -46,18 +48,47 @@
         </div>
       </div>
     </header>
-    <main>
-      <section style="padding: 24px 0">
-        <div class="container"> 
-          <ul> 
-            <li style="margin-bottom: 8px"><a href="main.html">Главная</a></li>
-            <li style="margin-bottom: 8px"> <a href="services.html">Услуги</a></li>
-            <li style="margin-bottom: 8px"> <a href="doctor.html">Карточка врача</a></li>
-            <li style="margin-bottom: 8px"> <a href="documents.html">Документы</a></li>
-            <li style="margin-bottom: 8px"> <a href="law.html">Законодательство</a></li>
-          </ul>
+    <main class="page">
+          <div class="breadcrumbs">
+            <div class="container">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><span class="breadcrumbs__link">Главная</span>
+                </li>
+                <li class="breadcrumbs__item"><span class="breadcrumbs__link">Документы</span></li>
+              </ul>
+            </div>
+          </div>
+      <div class="documents section"> 
+        <div class="container">
+          <div class="documents__title h2">Документы </div>
+          <div class="documents__content"> 
+            <div class="documents__main"> 
+              <div class="documents__section"> 
+                <div class="documents__section-title h3">Клиника</div>
+                <div class="documents__list"> <a class="documents__item link" href="#">Устав</a><a class="documents__item link" href="#">Приказ о назначении главного врача</a><a class="documents__item link" href="#">Сведения о реализуемых требованиях к защите персональных данных</a><a class="documents__item link" href="#">Политика в отношении обработки персональных данных</a><a class="documents__item link" href="#">Лицензии</a><a class="documents__item link" href="#">Свидетельство о регистрации</a><a class="documents__item link" href="#">Прием граждан</a><a class="documents__item link" href="#">Сводная ведомость результатов проведения специальной оценки условий труда</a></div>
+              </div>
+              <div class="documents__section"> 
+                <div class="documents__section-title h3">Пациентам</div>
+                <div class="documents__list"> <a class="documents__item link" href="#">Цена услуг</a><a class="documents__item link" href="#">График работы врачей</a><a class="documents__item link" href="#">Материнский капитал</a><a class="documents__item link" href="#">Возврат подоходного налога</a></div>
+              </div>
+            </div>
+            <div class="documents__form"> 
+              <form class="asside-form" action="">
+                <div class="asside-form__title">Первичный осмотр, план лечения и консультация бесплатно</div>
+                <div class="asside-form__desc">Укажите свой номер телефона, мы перезвоним и подберём для вас удобное время приёма.</div>
+                <div class="asside-form__controls"> 
+                  <div class="form-group"> 
+                    <label class="form-label" for=""></label>
+                    <input class="form-control" type="tel" name="" placeholder="+7 (999) 999-99-99">
+                  </div>
+                  <button class="asside-form__btn btn btn--l btn--wide">Записаться</button>
+                </div>
+                <div class="asside-form__tel">Остались вопросы?<a class="link" href="tel:+73512004123">+7 351 20-04-123 </a></div>
+              </form>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
     </main>
     <footer class="footer"> 
       <div class="container footer__container"> 

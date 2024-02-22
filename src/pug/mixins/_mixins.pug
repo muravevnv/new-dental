@@ -1,3 +1,35 @@
 mixin svgSprite(width, height, id)
   svg(width= width, height= height)
     use(xlink:href=`images/sprite.svg#${id}`)
+
+mixin breadcrumb(items, last)
+  .breadcrumbs
+    .container
+      ul.breadcrumbs__list&attributes(attributes)
+        each item in items
+          li.breadcrumbs__item
+            if (items.length === 1)
+              span.breadcrumbs__link= item
+            else
+              a(href="#" title=item).breadcrumbs__link.link= item
+        if last
+          li.breadcrumbs__item
+            span.breadcrumbs__link= last
+        else
+mixin feedback(img, className)
+  div.feedback(class=className)
+    .container 
+      .feedback__wrapper 
+        .feedback__info
+          h2.feedback__title Первичный осмотр, план лечения и консультация бесплатно
+          .feedback__desc Укажите свой номер телефона, мы перезвоним и подберём для вас удобное время приёма.
+          form.feedback__form(action="#")
+            .form-group 
+              label.form-label
+              input.form-control(type="tel" placeholder="+7 (999) 999-99-99") 
+            button.btn.feedback__btn(type="submit") Записаться
+          .feedback__contacts 
+            span Остались вопросы?
+            a(href="tel:+735120-04-123" class="feedback__link link") +7 351 20-04-123 
+        .feedback__img 
+          img(src=`images/feedback/${img}.png`, alt="")

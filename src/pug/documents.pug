@@ -1,0 +1,30 @@
+extends includes/_layout
+
+block content 
+  main.page
+    +breadcrumb(['Главная'], 'Документы')
+    .documents.section 
+      .container
+        .documents__title.h2 Документы 
+        .documents__content 
+          .documents__main 
+            .documents__section 
+              .documents__section-title.h3 Клиника
+              .documents__list 
+                a.documents__item.link(href="#") Устав
+                a.documents__item.link(href="#") Приказ о назначении главного врача
+                a.documents__item.link(href="#") Сведения о реализуемых требованиях к защите персональных данных
+                a.documents__item.link(href="#") Политика в отношении обработки персональных данных
+                a.documents__item.link(href="#") Лицензии
+                a.documents__item.link(href="#") Свидетельство о регистрации
+                a.documents__item.link(href="#") Прием граждан
+                a.documents__item.link(href="#") Сводная ведомость результатов проведения специальной оценки условий труда
+            .documents__section 
+              .documents__section-title.h3 Пациентам
+              .documents__list 
+                a.documents__item.link(href="#") Цена услуг
+                a.documents__item.link(href="#") График работы врачей
+                a.documents__item.link(href="#") Материнский капитал
+                a.documents__item.link(href="#") Возврат подоходного налога
+          .documents__form 
+            include components/_asside-form
