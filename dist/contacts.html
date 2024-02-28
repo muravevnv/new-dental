@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link href="css/main.css" rel="stylesheet">
-    <title>Главная</title>
+    <title>Новая стоматология</title>
   </head>
-  <body>
+  <body> 
     <header class="header"> 
       <div class="container"> <a class="header__logo" href="#"><img src="images/logo.svg" alt=""></a>
         <div class="header__content"> 
@@ -46,23 +48,67 @@
         </div>
       </div>
     </header>
-    <main>
-      <section style="padding: 24px 0">
-        <div class="container"> 
-          <ul> 
-            <li style="margin-bottom: 8px"><a href="main.html">Главная</a></li>
-            <li style="margin-bottom: 8px"> <a href="services.html">Услуги</a></li>
-            <li style="margin-bottom: 8px"> <a href="blog.html">Блог</a></li>
-            <li style="margin-bottom: 8px"> <a href="doctor.html">Карточка врача</a></li>
-            <li style="margin-bottom: 8px"> <a href="documents.html">Документы</a></li>
-            <li style="margin-bottom: 8px"> <a href="law.html">Законодательство</a></li>
-            <li style="margin-bottom: 8px"> <a href="contacts.html">Контакты</a></li>
-            <li style="margin-bottom: 8px"> <a href="404.html">404</a></li>
-            <li style="margin-bottom: 8px"> <a href="faq.html">FAQ</a></li>
-            <li style="margin-bottom: 8px"> <a href="policy.html">Политика конфиденциальности</a></li>
-          </ul>
+    <main class="page">
+          <div class="breadcrumbs">
+            <div class="container">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><span class="breadcrumbs__link">Главная</span>
+                </li>
+                <li class="breadcrumbs__item"><span class="breadcrumbs__link">Контакты</span></li>
+              </ul>
+            </div>
+          </div>
+      <div class="contacts section"> 
+        <div class="container">
+          <h1 class="contacts__title h1">Контакты</h1>
+          <div class="contacts__content"> 
+            <div class="contacts__map"> 
+              <div class="contacts__map-wrap" id="map"> </div>
+            </div>
+            <div class="contacts__info"> 
+              <div class="contacts__clinics">
+                <div class="contacts-clinic"> 
+                  <div class="contacts-clinic__img"> <img src="images/default-clinic.png" alt=""></div>
+                  <div class="contacts-clinic__info"> 
+                    <div class="contacts-clinic__name link">Клиника на Котина</div>
+                    <div class="contacts-clinic__adress">Челябинск, ул. Котина, 26</div>
+                  </div>
+                </div>
+                <div class="contacts-clinic"> 
+                  <div class="contacts-clinic__img"> <img src="images/default-clinic.png" alt=""></div>
+                  <div class="contacts-clinic__info"> 
+                    <div class="contacts-clinic__name link">Клиника на Салютной</div>
+                    <div class="contacts-clinic__adress">Челябинск, ул. Салютная, 26</div>
+                  </div>
+                </div>
+                <div class="contacts-clinic"> 
+                  <div class="contacts-clinic__img"> <img src="images/default-clinic.png" alt=""></div>
+                  <div class="contacts-clinic__info"> 
+                    <div class="contacts-clinic__name link">Клиника на Ленина</div>
+                    <div class="contacts-clinic__adress">Челябинск, пр. Ленина, 3 (4 этаж)</div>
+                  </div>
+                </div>
+              </div>
+              <div class="contacts__connect"> 
+                <div class="contacts-item"> 
+                      <svg width="28" height="28">
+                        <use xlink:href="images/sprite.svg#tel"></use>
+                      </svg><span class="link">+7 351 20-04-123</span>
+                </div>
+                <div class="contacts-item"> 
+                      <svg width="28" height="28">
+                        <use xlink:href="images/sprite.svg#mail"></use>
+                      </svg><span class="link">+7 351 20-04-123</span>
+                </div>
+                <div class="contacts__socials socials"> <a class="socials__item" href="#"> 
+                        <svg width="48" height="48">
+                          <use xlink:href="images/sprite.svg#vk"></use>
+                        </svg></a></div>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
     </main>
     <footer class="footer"> 
       <div class="container footer__container"> 

@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link href="css/main.css" rel="stylesheet">
-    <title>Главная</title>
+    <title>Новая стоматология</title>
   </head>
-  <body>
+  <body> 
     <header class="header"> 
       <div class="container"> <a class="header__logo" href="#"><img src="images/logo.svg" alt=""></a>
         <div class="header__content"> 
@@ -46,23 +48,55 @@
         </div>
       </div>
     </header>
-    <main>
-      <section style="padding: 24px 0">
+    <main class="page">
+          <div class="breadcrumbs">
+            <div class="container">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><span class="breadcrumbs__link">Главная</span>
+                </li>
+                <li class="breadcrumbs__item"><span class="breadcrumbs__link">Блог</span></li>
+              </ul>
+            </div>
+          </div>
+      <div class="blog section">
         <div class="container"> 
-          <ul> 
-            <li style="margin-bottom: 8px"><a href="main.html">Главная</a></li>
-            <li style="margin-bottom: 8px"> <a href="services.html">Услуги</a></li>
-            <li style="margin-bottom: 8px"> <a href="blog.html">Блог</a></li>
-            <li style="margin-bottom: 8px"> <a href="doctor.html">Карточка врача</a></li>
-            <li style="margin-bottom: 8px"> <a href="documents.html">Документы</a></li>
-            <li style="margin-bottom: 8px"> <a href="law.html">Законодательство</a></li>
-            <li style="margin-bottom: 8px"> <a href="contacts.html">Контакты</a></li>
-            <li style="margin-bottom: 8px"> <a href="404.html">404</a></li>
-            <li style="margin-bottom: 8px"> <a href="faq.html">FAQ</a></li>
-            <li style="margin-bottom: 8px"> <a href="policy.html">Политика конфиденциальности</a></li>
-          </ul>
+          <h1 class="page__title h1">Блог</h1>
+          <div class="blog__list"> 
+            <div class="blog-item blog-item--s"><a class="blog-item__img" href="#"><img src="images/blog/blog-01.jpg" alt=""></a><a class="blog-item__link link" href="#">Новость из блога</a>
+              <div class="blog-item__desc">Красткое описание</div>
+            </div>
+            <div class="blog-item blog-item--l"><a class="blog-item__img" href="#"><img src="images/blog/blog-02.jpg" alt=""></a><a class="blog-item__link link" href="#">Новость из блога</a>
+              <div class="blog-item__desc">Красткое описание</div>
+            </div>
+            <div class="blog-item blog-item--author">
+              <div class="blog-item__author"> 
+                <div class="blog-item__author-photo"> <img src="images/author/author-01.png" alt=""></div>
+                <div class="blog-item__author-info"> 
+                  <div class="blog-item__author-name">Трубецкая Анна Александровна</div>
+                  <div class="blog-item__author-post">Отвечает врач-стоматолог-терапевт, пародонтолог</div>
+                </div>
+              </div><a class="blog-item__link link" href="#">Новость из блога</a>
+              <div class="blog-item__desc">Красткое описание</div>
+            </div>
+            <div class="blog-item blog-item--s"><a class="blog-item__img" href="#"><img src="images/blog/blog-03.jpg" alt=""></a><a class="blog-item__link link" href="#">Новость из блога</a>
+              <div class="blog-item__desc">Красткое описание</div>
+            </div>
+            <div class="blog-item blog-item--author">
+              <div class="blog-item__author"> 
+                <div class="blog-item__author-photo"> <img src="images/author/author-01.png" alt=""></div>
+                <div class="blog-item__author-info"> 
+                  <div class="blog-item__author-name">Трубецкая Анна Александровна</div>
+                  <div class="blog-item__author-post">Отвечает врач-стоматолог-терапевт, пародонтолог</div>
+                </div>
+              </div><a class="blog-item__link link" href="#">Новость из блога</a>
+              <div class="blog-item__desc">Красткое описание</div>
+            </div>
+            <div class="blog-item blog-item--l"><a class="blog-item__img" href="#"><img src="images/blog/blog-02.jpg" alt=""></a><a class="blog-item__link link" href="#">Новость из блога</a>
+              <div class="blog-item__desc">Красткое описание</div>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
     </main>
     <footer class="footer"> 
       <div class="container footer__container"> 
