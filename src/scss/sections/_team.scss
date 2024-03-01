@@ -45,6 +45,14 @@
     line-height: 1.25;
     color: var(--color-grey);
   }
+
+  &__post {
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 600;
+  }
 }
 
 .s-team {

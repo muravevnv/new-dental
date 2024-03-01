@@ -72,6 +72,7 @@
 .tab-controls {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
@@ -82,6 +83,13 @@
   border-radius: 12px;
   font-weight: 500;
   color: var(--color-primary);
+  cursor: pointer;
+
+  @include media(sm) {
+    padding: 7px 15px;
+    font-size: 14px;
+    border-radius: 8px;
+  }
 
   &.is-selected {
     background: rgba(178, 206, 239, 0.32);
@@ -127,4 +135,63 @@
 
 .page {
   background-color: var(--color-grey-light);
+
+  &__title {
+    margin-bottom: 56px;
+
+    @include media(xl) {
+      margin-bottom: 40px;
+    }
+
+    @include media(md)  {
+      margin-bottom: 32px;
+    }
+  }
+
+
+  &-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+
+    @include media(xl) {
+      gap: 32px;
+    }
+
+    @include media(md) {
+      flex-direction: column;
+    }
+  }
+
+  &-main {
+    width: 100%;
+  }
+
+  &-asside {
+    max-width: 440px;
+    width: 100%;
+    gap: 60px;
+  }
+}
+
+.common-list {
+  li {
+    position: relative;
+    padding-left: 18px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 12px;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 6px;
+      height: 6px;
+      background-color: var(--color-primary);
+      top: 7px;
+      left: 0;
+      border-radius: 50%;
+    }
+  }
 }

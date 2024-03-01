@@ -26,7 +26,7 @@
             </button>
             <button class="header__burger" type="button"><span> </span><span> </span><span> </span></button>
           </div>
-          <div class="header__menu"> 
+          <div class="header__menu">
             <nav class="header__nav"> 
               <ul class="header__nav-list"> 
                 <li class="header__nav-item"> <a class="link" href="#">О клинике</a></li>
@@ -89,6 +89,31 @@
         </div>
       </div>
     </footer>
+    <div class="popup js-popup" data-popup="callback-popup">
+      <div class="popup-overlay js-popup-close"></div>
+      <div class="popup-wrapper"> 
+        <div class="popup-content"> 
+          <button class="popup__close js-popup-close" type="button">
+                <svg width="32" height="32">
+                  <use xlink:href="images/sprite.svg#cross"></use>
+                </svg>
+          </button>
+          <form class="asside-form" action="">
+            <div class="asside-form__title">Секундочку!</div>
+            <div class="asside-form__desc">Можем закрепить для вас стоимость лечения по старому курсу, если пока не планируете. Так потом сможете пройти лечение по текущим ценам.</div>
+            <div class="asside-form__controls"> 
+              <div class="form-group"> 
+                <label class="form-label" for=""></label>
+                <input class="form-control" type="tel" name="" placeholder="+7 (999) 999-99-99">
+              </div>
+              <button class="asside-form__btn btn btn--l btn--wide">Закрепить цены</button>
+            </div>
+            <div class="asside-form__agreement">Нажимая на кнопку “Закрепить цены”, вы даете согласие на  <a class="link" href="#">обработку своих данных </a></div>
+            <div class="asside-form__tel">Или позвоните нам<a class="link" href="tel:+73512004123">+7 351 20-04-123 </a></div>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш_api_ключ&amp;lang=ru_RU" type="text/javascript"></script>
     <script src="scripts/swiper-bundle.min.js"></script>
     <script src="scripts/main.js"></script>

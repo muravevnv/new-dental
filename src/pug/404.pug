@@ -1,0 +1,16 @@
+extends includes/_layout
+
+block content 
+  main.page
+    .not-found 
+        .container 
+            .not-found__wrapper 
+                .not-found__img 
+                    img(src="images/not-found.png", alt="")
+                .not-found__title Страница не найдена
+                .not-found__desc Пожалуйста, перейдите на сайт
+                .not-found__action 
+                    a.not-found__btn.btn(href="#") Перейти на главную
+                    .not-found__tel 
+                        span Или сразу позвоните нам
+                        a(href="tel:+73512004123").link +7 351 20-04-123 

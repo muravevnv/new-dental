@@ -65,8 +65,8 @@
             <div class="page-main"> 
               <div class="faq">
                 <div class="faq__list"> 
-                  <div class="faq-item is-open"> 
-                    <div class="faq-item__head"> <span>1. Общие вопросы</span>
+                  <div class="js-accordeon faq-item is-open"> 
+                    <div class="js-accordeon-btn faq-item__head"> <span>1. Общие вопросы</span>
                           <svg width="20" height="20">
                             <use xlink:href="images/sprite.svg#arrow-down"></use>
                           </svg>
@@ -110,8 +110,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="faq-item"> 
-                    <div class="faq-item__head"> <span>2. Вопросы связанные с врачами</span>
+                  <div class="js-accordeon faq-item"> 
+                    <div class="js-accordeon-btn faq-item__head"> <span>2. Вопросы связанные с врачами</span>
                           <svg width="20" height="20">
                             <use xlink:href="images/sprite.svg#arrow-down"></use>
                           </svg>
@@ -155,8 +155,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="faq-item"> 
-                    <div class="faq-item__head"> <span>3. Вопросы связанные с врачами</span>
+                  <div class="js-accordeon faq-item">
+                    <div class="js-accordeon-btn faq-item__head"> <span>3. Вопросы связанные с врачами</span>
                           <svg width="20" height="20">
                             <use xlink:href="images/sprite.svg#arrow-down"></use>
                           </svg>
@@ -200,8 +200,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="faq-item"> 
-                    <div class="faq-item__head"> <span>3. Вопросы связанные с врачами</span>
+                  <div class="js-accordeon faq-item">
+                    <div class="js-accordeon-btn faq-item__head"> <span>3. Вопросы связанные с врачами</span>
                           <svg width="20" height="20">
                             <use xlink:href="images/sprite.svg#arrow-down"></use>
                           </svg>
@@ -245,8 +245,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="faq-item"> 
-                    <div class="faq-item__head"> <span>3. Вопросы связанные с врачами</span>
+                  <div class="js-accordeon faq-item">
+                    <div class="js-accordeon-btn faq-item__head"> <span>3. Вопросы связанные с врачами</span>
                           <svg width="20" height="20">
                             <use xlink:href="images/sprite.svg#arrow-down"></use>
                           </svg>
@@ -338,6 +338,31 @@
         </div>
       </div>
     </footer>
+    <div class="popup js-popup" data-popup="callback-popup">
+      <div class="popup-overlay js-popup-close"></div>
+      <div class="popup-wrapper"> 
+        <div class="popup-content"> 
+          <button class="popup__close js-popup-close" type="button">
+                <svg width="32" height="32">
+                  <use xlink:href="images/sprite.svg#cross"></use>
+                </svg>
+          </button>
+          <form class="asside-form" action="">
+            <div class="asside-form__title">Секундочку!</div>
+            <div class="asside-form__desc">Можем закрепить для вас стоимость лечения по старому курсу, если пока не планируете. Так потом сможете пройти лечение по текущим ценам.</div>
+            <div class="asside-form__controls"> 
+              <div class="form-group"> 
+                <label class="form-label" for=""></label>
+                <input class="form-control" type="tel" name="" placeholder="+7 (999) 999-99-99">
+              </div>
+              <button class="asside-form__btn btn btn--l btn--wide">Закрепить цены</button>
+            </div>
+            <div class="asside-form__agreement">Нажимая на кнопку “Закрепить цены”, вы даете согласие на  <a class="link" href="#">обработку своих данных </a></div>
+            <div class="asside-form__tel">Или позвоните нам<a class="link" href="tel:+73512004123">+7 351 20-04-123 </a></div>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш_api_ключ&amp;lang=ru_RU" type="text/javascript"></script>
     <script src="scripts/swiper-bundle.min.js"></script>
     <script src="scripts/main.js"></script>

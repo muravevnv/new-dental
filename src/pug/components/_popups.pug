@@ -1,0 +1,18 @@
+.popup.js-popup(data-popup="callback-popup")
+  .popup-overlay.js-popup-close
+  .popup-wrapper 
+    .popup-content 
+      button(type="button").popup__close.js-popup-close
+        +svgSprite(32, 32, 'cross')
+      form.asside-form(action="")
+        .asside-form__title Секундочку!
+        .asside-form__desc Можем закрепить для вас стоимость лечения по старому курсу, если пока не планируете. Так потом сможете пройти лечение по текущим ценам.
+        .asside-form__controls 
+          .form-group 
+            label.form-label(for="")
+            input.form-control(type="tel", name="" placeholder="+7 (999) 999-99-99") 
+          button.asside-form__btn.btn.btn--l.btn--wide Закрепить цены
+        .asside-form__agreement Нажимая на кнопку “Закрепить цены”, вы даете согласие на  
+          a(href="#").link обработку своих данных 
+        .asside-form__tel Или позвоните нам
+          a.link(href="tel:+73512004123") +7 351 20-04-123 

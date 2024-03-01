@@ -1,0 +1,47 @@
+extends includes/_layout
+
+block content 
+	main.page
+		+breadcrumb(['Главная'], 'Блог')
+		.blog.section
+			.container 
+				h1.page__title.h1 Блог
+				.blog__list 
+					.blog-item.blog-item--s
+						a(href="#").blog-item__img
+							img(src="images/blog/blog-01.jpg", alt="")
+						a.blog-item__link.link(href="#") Новость из блога
+						.blog-item__desc Красткое описание
+					.blog-item.blog-item--l
+						a(href="#").blog-item__img
+							img(src="images/blog/blog-02.jpg", alt="")
+						a.blog-item__link.link(href="#") Новость из блога
+						.blog-item__desc Красткое описание
+					.blog-item.blog-item--author
+						.blog-item__author 
+							.blog-item__author-photo 
+								img(src="images/author/author-01.png", alt="")
+							.blog-item__author-info 
+								.blog-item__author-name Трубецкая Анна Александровна
+								.blog-item__author-post Отвечает врач-стоматолог-терапевт, пародонтолог
+						a.blog-item__link.link(href="#") Новость из блога
+						.blog-item__desc Красткое описание
+					.blog-item.blog-item--s
+						a(href="#").blog-item__img
+							img(src="images/blog/blog-03.jpg", alt="")
+						a.blog-item__link.link(href="#") Новость из блога
+						.blog-item__desc Красткое описание
+					.blog-item.blog-item--author
+						.blog-item__author 
+							.blog-item__author-photo 
+								img(src="images/author/author-01.png", alt="")
+							.blog-item__author-info 
+								.blog-item__author-name Трубецкая Анна Александровна
+								.blog-item__author-post Отвечает врач-стоматолог-терапевт, пародонтолог
+						a.blog-item__link.link(href="#") Новость из блога
+						.blog-item__desc Красткое описание
+					.blog-item.blog-item--l
+						a(href="#").blog-item__img
+							img(src="images/blog/blog-02.jpg", alt="")
+						a.blog-item__link.link(href="#") Новость из блога
+						.blog-item__desc Красткое описание

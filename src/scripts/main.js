@@ -5,7 +5,7 @@ if (document.querySelector(".js-hero-slider")) {
     allowTouchMove: false,
     navigation: {
       nextEl: ".js-hero-slider-next",
-      // prevEl: '.js-hero-slider-prev',
+      prevEl: '.js-hero-slider-prev',
     },
   });
 }
@@ -40,6 +40,21 @@ if (document.querySelector(".js-team-slider")) {
       },
       1280: {
         slidesPerView: 4,
+      },
+    },
+  });
+}
+
+if (document.querySelector(".js-reviews-slider")) {
+  let benefitsSlider = new Swiper(".js-reviews-slider", {
+    slidesPerView: 'auto',
+    spaceBetween: 12,
+    breakpoints: {
+      767: {
+        spaceBetween: 16,
+      },
+      800: {
+        spaceBetween: 20,
       },
     },
   });
@@ -87,6 +102,48 @@ menuBtn.addEventListener("click", () => {
   menuBtn.classList.toggle("is-active");
   menu.classList.toggle("is-open");
 });
+
+let showTextBtn = document.querySelectorAll(".js-show-text");
+
+if (showTextBtn) {
+  showTextBtn.forEach((btn) => {
+    let text = btn.previousElementSibling;
+    btn.addEventListener("click", () => {
+      text.classList.toggle("is-show");
+    });
+  });
+}
+
+let accordeonItems = document.querySelectorAll('.js-accordeon');
+
+if(accordeonItems) {
+  accordeonItems.forEach((item) => {
+    let accordeonBtn = item.querySelector('.js-accordeon-btn');
+    accordeonBtn.addEventListener('click', () => {
+      item.classList.toggle('is-open');
+    })
+  })
+}
+
+let popupBtns = document.querySelectorAll('.js-popup-open');
+
+if(popupBtns) {
+  popupBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      let popup = document.querySelector(`.js-popup[data-popup="${btn.dataset.popup}"]`);
+      popup.classList.add('is-open');
+    })
+  })
+
+  let popupBtnsClose = document.querySelectorAll('.js-popup-close');
+
+  popupBtnsClose.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      let popup = btn.closest('.js-popup');
+      popup.classList.remove('is-open');
+    })
+  })
+}
 
 // Карта
 ymaps.ready(init);

@@ -1,0 +1,61 @@
+.policy-section {
+
+    + .policy-section {
+        margin-top: 32px;
+
+        @include media(sm) {
+            margin-top: 24px;
+        }
+    }
+
+    h2 {
+        margin-bottom: 24px;
+
+        @include media(sm) {
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+    }
+
+    p + p {
+        margin-top: 16px;
+
+        @include media(sm) {
+            margin-top: 12px;
+        }
+    }
+}
+
+ol {
+    list-style: none;
+    padding-left: 0;
+    counter-reset: list;
+
+    li {
+        position: relative;
+        counter-increment: list;
+        padding-left: 28px;
+
+        @include media(sm) {
+            padding-left: 24px;
+        }
+
+        + li {
+            margin-top: 16px;
+
+            @include media(sm) {
+                margin-top: 12px;
+            }
+        }
+
+        &::before {
+            position: absolute;
+            content: counter(list)'.';
+            left: 0;
+            top: 0;
+            font-weight: 500;
+            line-height: 1.44;
+            color: var(--color-primary);
+        }
+    }
+}

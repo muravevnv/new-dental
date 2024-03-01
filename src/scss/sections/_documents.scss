@@ -112,6 +112,15 @@
     }
   }
 
+  &__agreement {
+    margin-top: 12px;
+    font-size: 14px;
+
+    a {
+      color: var(--color-primary);
+    }
+  }
+
   &__tel {
     margin-top: 32px;
     font-size: 18px;

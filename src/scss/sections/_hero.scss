@@ -15,6 +15,24 @@
 
     @include media(md) {
       top: 65%;
+      right: 12px;
+    }
+  }
+
+  &__prev-btn {
+    position: absolute;
+    left: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+
+    svg {
+      transform: rotate(180deg);
+    }
+
+    @include media(md) {
+      top: 65%;
+      left: 12px;
     }
   }
 
@@ -39,7 +57,7 @@
   &__item-info {
     max-width: 750px;
     width: 100%;
-    padding: 36px;
+    padding: 36px 36px 36px 76px;
     position: relative;
     z-index: 2;
 

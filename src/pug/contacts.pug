@@ -1,0 +1,41 @@
+extends includes/_layout
+
+block content 
+  main.page
+    +breadcrumb(['Главная'], 'Контакты')
+    .contacts.section 
+        .container
+            h1.contacts__title.h1 Контакты
+            .contacts__content 
+                .contacts__map 
+                    .contacts__map-wrap#map 
+                .contacts__info 
+                    .contacts__clinics
+                        .contacts-clinic 
+                            .contacts-clinic__img 
+                                img(src="images/default-clinic.png", alt="")
+                            .contacts-clinic__info 
+                                .contacts-clinic__name.link Клиника на Котина
+                                .contacts-clinic__adress Челябинск, ул. Котина, 26
+                        .contacts-clinic 
+                            .contacts-clinic__img 
+                                img(src="images/default-clinic.png", alt="")
+                            .contacts-clinic__info 
+                                .contacts-clinic__name.link Клиника на Салютной
+                                .contacts-clinic__adress Челябинск, ул. Салютная, 26
+                        .contacts-clinic 
+                            .contacts-clinic__img 
+                                img(src="images/default-clinic.png", alt="")
+                            .contacts-clinic__info 
+                                .contacts-clinic__name.link Клиника на Ленина
+                                .contacts-clinic__adress Челябинск, пр. Ленина, 3 (4 этаж)
+                    .contacts__connect 
+                        .contacts-item 
+                            +svgSprite(28, 28, 'tel')
+                            span.link +7 351 20-04-123
+                        .contacts-item 
+                            +svgSprite(28, 28, 'mail')
+                            span.link +7 351 20-04-123
+                        .contacts__socials.socials 
+                            a.socials__item(href="#") 
+                                +svgSprite(48, 48, 'vk')

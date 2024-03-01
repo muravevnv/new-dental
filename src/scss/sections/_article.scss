@@ -1,0 +1,53 @@
+.article {
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__subtitle {
+    margin-bottom: 12px;
+  }
+
+  &__desc {
+    margin-bottom: 32px;
+  }
+
+  &__img {
+    margin-bottom: 4px;
+    display: block;
+    width: 100%;
+  }
+
+  &__nav {
+    background: linear-gradient(262deg, #cae0f3 0%, #eaeef3 100%);
+    border-radius: 4px 4px 16px 16px;
+    padding: 24px;
+
+    @include media(md) {
+      padding: 16px;
+    }
+
+    &-title {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 1.25;
+      margin-bottom: 20px;
+
+      @include media(md) {
+        &.h2 {
+          font-size: 18px;
+          margin-bottom: 16px;
+        }
+      }
+    }
+
+    &-list {
+      li {
+        color: var(--color-primary);
+
+        + li {
+          margin-top: 12px;
+        }
+      }
+    }
+  }
+}

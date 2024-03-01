@@ -1,0 +1,62 @@
+.popup {
+  position: fixed;
+  inset: 0 0 0 0;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+  display: none;
+
+  &.is-open {
+    display: block;
+  }
+
+  &-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+
+  &-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+  }
+
+  &-content {
+    max-width: 540px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    border-radius: 20px;
+    background: linear-gradient(262deg, #cae0f3 0%, #eaeef3 100%);
+    padding: 32px;
+
+    @include media(md) {
+      padding: 24px 16px;
+      max-width: calc(100% - 32px);
+    }
+
+    .asside-form {
+      padding: 0;
+    }
+
+    .asside-form__btn {
+      width: 100% !important;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 32px;
+    height: 32px;
+
+    svg {
+      display: block;
+    }
+  }
+}

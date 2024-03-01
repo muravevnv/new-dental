@@ -1,0 +1,102 @@
+.contacts {
+
+    &__title {
+        margin-bottom: 56px;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 440px;
+        gap: 24px;
+
+        @include media(md)  {
+            display: block;
+        }
+    }
+
+    &__map {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    &__map-wrap {
+        max-width: 100%;
+        height: 560px;
+
+        @include media(md) {
+            height: 480px;
+            margin-bottom: 32px;
+        }
+    }
+
+    &__clinics {
+        border-radius: 16px;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    &__connect {
+        display: flex;
+        gap: 12px;
+        flex-direction: column;
+        width: 100%;
+
+        @include media(md) {
+            margin-top: 32px;
+        }
+    }
+
+    &__socials {
+        margin-top: 12px;
+
+        @include media(md) {
+            margin-top: 4px;
+        }
+    }
+}
+
+.contacts-clinic {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 16px;
+    background-color: var(--color-whte);
+
+    &:not(:last-of-type) {
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    &__img {
+        width: 56px;
+        height: 56px;
+        flex-shrink: 0;
+    }
+
+    &__info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+
+    &__name {
+        color: var(--color-primary);
+        margin-bottom: 4px;
+    }
+}
+
+.contacts-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    color: var(--color-primary);
+}
