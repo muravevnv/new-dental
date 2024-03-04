@@ -33,7 +33,7 @@ body {
   font-family: $font-main;
   font-size: 16px;
   line-height: 1.25;
-  color: $black;
+  color: var(--color-blck);
   text-rendering: optimizespeed;
   position: relative;
   font-weight: 400;
@@ -120,9 +120,13 @@ select {
 
 .container {
   max-width: 1440px;
-  padding: 0 20px;
+  padding: 0 40px;
   width: 100%;
   margin: 0 auto;
+
+  @media(max-width: 1439px) {
+    padding: 0 20px;
+  }
 
   @include media(sm) {
     padding: 0 16px;

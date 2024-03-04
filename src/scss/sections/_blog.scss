@@ -94,6 +94,14 @@
     }
   }
 
+
+  &__title {
+    font-size: 18px;
+    line-height: 1.44;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+
   &__link {
     display: inline-block;
     width: auto;

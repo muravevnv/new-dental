@@ -49,13 +49,13 @@
       font-size: 16px;
       line-height: 1.25;
 
-      span {
-        color: var(--color-primary);
-      }
-
       + p {
         margin-top: 16px;
       }
+    }
+
+    span, a  {
+      color: var(--color-primary);
     }
   }
 

@@ -55,19 +55,22 @@
   }
 
   &__item-info {
-    max-width: 750px;
+    max-width: 850px;
     width: 100%;
     padding: 36px 36px 36px 76px;
     position: relative;
     z-index: 2;
 
     @include media(lg) {
+      max-width: 550px;
       padding: 0;
       margin-bottom: 40px;
+      padding-left: 76px;
     }
 
     @include media(md) {
       margin-bottom: 16px;
+      padding-left: 0;
     }
   }
 
