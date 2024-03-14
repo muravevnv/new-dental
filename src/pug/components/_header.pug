@@ -21,8 +21,105 @@ header.header
           ul.header__nav-list 
             li.header__nav-item 
               a(href="#" class="link") О клинике
-            li.header__nav-item 
-              a(href="#" class="link") Услуги
+            li.header__nav-item.header-catalog-toggle
+              a(href="#")
+                span(class="link") Услуги
+                  +svgSprite(16, 16, 'arrow')
+              .header-catalog
+                .header-catalog__inner 
+                  .header-catalog__aside
+                    .header-catalog__category.js-header-catalog-item.is-active(data-catalog-item="1") Профессиональная гигиена
+                      +svgSprite(20, 20, 'arrow')
+                    .header-catalog__category.js-header-catalog-item(data-catalog-item="2") Диагностика
+                      +svgSprite(20, 20, 'arrow')
+                    .header-catalog__category.js-header-catalog-item(data-catalog-item="3") Лечение зубов
+                      +svgSprite(20, 20, 'arrow')
+                    .header-catalog__category.js-header-catalog-item(data-catalog-item="4") Отбеливание зубов
+                      +svgSprite(20, 20, 'arrow')
+                    .header-catalog__category.js-header-catalog-item(data-catalog-item="5") Исправление прикуса
+                      +svgSprite(20, 20, 'arrow')
+                    .header-catalog__category.js-header-catalog-item(data-catalog-item="6") Брекеты
+                      +svgSprite(20, 20, 'arrow')
+                    .header-catalog__category.js-header-catalog-item(data-catalog-item="7") Элайнеры
+                      +svgSprite(20, 20, 'arrow')
+                  .header-catalog__main 
+                    .header-catalog__section.js-header-catalog-section(data-catalog-section="1")
+                      .header-catalog__section-headline.js-header-catalog-item(data-catalog-item="m-1") Профессиональная гигиена
+                        +svgSprite(16, 16, 'arrow')
+                      .header-catalog__section-links.js-header-catalog-section(data-catalog-section="m-1")
+                        a(href="#").header-catalog__section-link Лечение кариеса методом ICON
+                        a(href="#").header-catalog__section-link Световая
+                        a(href="#").header-catalog__section-link Лечение кариеса
+                        a(href="#").header-catalog__section-link Лечение периодонтита
+                        a(href="#").header-catalog__section-link Световая пломба
+                        a(href="#").header-catalog__section-link Лечение кариеса
+                        a(href="#").header-catalog__section-link Лечение периодонтита
+                    .header-catalog__section.js-header-catalog-section(data-catalog-section="2")
+                      .header-catalog__section-headline.js-header-catalog-item(data-catalog-item="m-2") Диагностика
+                        +svgSprite(16, 16, 'arrow')
+                      .header-catalog__section-links.js-header-catalog-section(data-catalog-section="m-2")
+                        a(href="#").header-catalog__section-link Лечение кариеса методом ICON
+                        a(href="#").header-catalog__section-link Световая
+                        a(href="#").header-catalog__section-link Лечение кариеса
+                        a(href="#").header-catalog__section-link Лечение периодонтита
+                        a(href="#").header-catalog__section-link Световая пломба
+                        a(href="#").header-catalog__section-link Лечение кариеса
+                        a(href="#").header-catalog__section-link Лечение периодонтита
+                    .header-catalog__section.js-header-catalog-section(data-catalog-section="3")
+                      .header-catalog__section-headline.js-header-catalog-item(data-catalog-item="m-3") Лечение зубов
+                        +svgSprite(16, 16, 'arrow')
+                      .header-catalog__section-links.js-header-catalog-section(data-catalog-section="m-3")
+                        a(href="#").header-catalog__section-link Лечение кариеса методом ICON
+                        a(href="#").header-catalog__section-link Световая
+                        a(href="#").header-catalog__section-link Лечение кариеса
+                        a(href="#").header-catalog__section-link Лечение периодонтита
+                        a(href="#").header-catalog__section-link Световая пломба
+                        a(href="#").header-catalog__section-link Лечение кариеса
+                        a(href="#").header-catalog__section-link Лечение периодонтита
+                    .header-catalog__section.js-header-catalog-section(data-catalog-section="4")
+                      .header-catalog__section-headline.js-header-catalog-item(data-catalog-item="m-4") Отбеливание зубов
+                        +svgSprite(16, 16, 'arrow')
+                      .header-catalog__section-links.js-header-catalog-section(data-catalog-section="m-4")
+                        a(href="#").header-catalog__section-link Лечение кариеса методом ICON
+                        a(href="#").header-catalog__section-link Световая
+                        a(href="#").header-catalog__section-link Лечение кариеса
+                        a(href="#").header-catalog__section-link Лечение периодонтита
+                        a(href="#").header-catalog__section-link Световая пломба
+                        a(href="#").header-catalog__section-link Лечение кариеса
+                        a(href="#").header-catalog__section-link Лечение периодонтита
+                    .header-catalog__section.js-header-catalog-section(data-catalog-section="5")
+                      .header-catalog__section-headline.js-header-catalog-item(data-catalog-item="m-5") Исправление прикуса
+                        +svgSprite(16, 16, 'arrow')
+                      .header-catalog__section-links.js-header-catalog-section(data-catalog-section="m-5")
+                        a(href="#").header-catalog__section-link Лечение кариеса методом ICON
+                        a(href="#").header-catalog__section-link Световая
+                        a(href="#").header-catalog__section-link Лечение кариеса
+                        a(href="#").header-catalog__section-link Лечение периодонтита
+                        a(href="#").header-catalog__section-link Световая пломба
+                        a(href="#").header-catalog__section-link Лечение кариеса
+                        a(href="#").header-catalog__section-link Лечение периодонтита
+                    .header-catalog__section.js-header-catalog-section(data-catalog-section="6")
+                      .header-catalog__section-headline.js-header-catalog-item(data-catalog-item="m-6") Брекеты
+                        +svgSprite(16, 16, 'arrow')
+                      .header-catalog__section-links.js-header-catalog-section(data-catalog-section="m-6")
+                        a(href="#").header-catalog__section-link Лечение кариеса методом ICON
+                        a(href="#").header-catalog__section-link Световая
+                        a(href="#").header-catalog__section-link Лечение кариеса
+                        a(href="#").header-catalog__section-link Лечение периодонтита
+                        a(href="#").header-catalog__section-link Световая пломба
+                        a(href="#").header-catalog__section-link Лечение кариеса
+                        a(href="#").header-catalog__section-link Лечение периодонтита
+                    .header-catalog__section.js-header-catalog-section(data-catalog-section="7")
+                      .header-catalog__section-headline.js-header-catalog-item(data-catalog-item="m-7") Элайнеры
+                        +svgSprite(16, 16, 'arrow')
+                      .header-catalog__section-links.js-header-catalog-section(data-catalog-section="m-7")
+                        a(href="#").header-catalog__section-link Лечение кариеса методом ICON
+                        a(href="#").header-catalog__section-link Световая
+                        a(href="#").header-catalog__section-link Лечение кариеса
+                        a(href="#").header-catalog__section-link Лечение периодонтита
+                        a(href="#").header-catalog__section-link Световая пломба
+                        a(href="#").header-catalog__section-link Лечение кариеса
+                        a(href="#").header-catalog__section-link Лечение периодонтита
             li.header__nav-item 
               a(href="#" class="link") Цены
             li.header__nav-item 
@@ -31,10 +128,10 @@ header.header
               a(href="#" class="link") Работы врачей
             li.header__nav-item 
               a(href="#" class="link") Отзывы
-              span.color-primary 287
+              span.header__nav-item-counter.color-primary 287
             li.header__nav-item 
               a(href="#" class="link") Акции
-              span.color-red 4
+              span.header__nav-item-counter.color-red 4
             li.header__nav-item 
               a(href="#" class="link") Блог
             li.header__nav-item 

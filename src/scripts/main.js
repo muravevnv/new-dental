@@ -195,3 +195,29 @@ function init() {
       )
     );
 }
+
+
+let headerCatalog = document.querySelector('.header-catalog');
+
+
+if(headerCatalog) {
+  let headerCatalogCategories = document.querySelectorAll('.js-header-catalog-item');
+  let headerCatalogSections = document.querySelectorAll('.js-header-catalog-section');
+
+  let currentEvent;
+
+  if(window.innerWidth <= 1200) {
+    currentEvent = 'click';
+  } else {
+    currentEvent = 'mouseenter';
+  }
+
+  headerCatalogCategories.forEach((category) => {
+    category.addEventListener(currentEvent, () => {
+      headerCatalogCategories.forEach(item => item.classList.remove('is-active'))
+      headerCatalogSections.forEach(item => item.classList.remove('is-open'))
+      category.classList.add('is-active')
+      document.querySelector(`.js-header-catalog-section[data-catalog-section="${category.dataset.catalogItem}"]`).classList.add('is-open')
+    })
+  })
+}
