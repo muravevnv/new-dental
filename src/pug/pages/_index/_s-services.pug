@@ -34,6 +34,33 @@
     },
   ]
 
+  var servicesKidsList = [
+    {
+      id: 1,
+      title: 'Лечение зубов'
+    },
+    {
+      id: 2,
+      title: 'Профилактика'
+    },
+    {
+      id: 3,
+      title: 'Герметизация фиссур'
+    },
+    {
+      id: 4,
+      title: 'Исправление прикуса'
+    },
+    {
+      id: 5,
+      title: 'Сохранение места'
+    },
+    {
+      id: 6,
+      title: 'Детские коронки'
+    },
+  ]
+
 .s-servcies.section(data-role="tabs") 
   .container
     .section__head
@@ -50,8 +77,8 @@
             a(href="").services-card__title.link= item.title
     .s-services__content(data-tabs-panel="2")
       .services-cards 
-        for item in servicesList
+        for item in servicesKidsList
           .services-card
             .services-card__img 
-              img(src=`images/services/services-default.svg`, alt="")
+              img(src=`images/services-kids/services-0${item.id}.svg`, alt="")
             a(href="").services-card__title.link= item.title

@@ -451,6 +451,12 @@ p {
   font-weight: 500;
 }
 
+.h4 {
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: 500;
+}
+
 .form-group {
   width: 100%;
 }
@@ -2089,6 +2095,41 @@ ol li::before {
 .article__nav-list li + li {
   margin-top: 12px;
 }
+.article-section {
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 24px;
+}
+.article-section__img img {
+  display: block;
+  border-radius: 16px;
+}
+.article-section__img figcaption {
+  font-size: 14px;
+  line-height: 1.42;
+  margin-top: 10px;
+  color: var(--color-grey);
+}
+.article-section__advice {
+  padding: 24px;
+  border-radius: 16px;
+  background: linear-gradient(262deg, #bdeeda 0%, #e7f1ef 81.5%);
+  font-size: 18px;
+  line-height: 1.44;
+}
+.article-section__advice-text {
+  max-width: 640px;
+}
+.article-section__advice-doctor {
+  margin-top: 24px;
+  font-weight: 700;
+}
 
 .service-banner__wrapper {
   position: relative;
@@ -3408,6 +3449,9 @@ ol li::before {
   }
   .price-section__table-row + .price-section__table-row {
     margin-top: 12px;
+  }
+  .article-section {
+    gap: 20px;
   }
   .service-banner__wrapper {
     padding: 24px 16px;

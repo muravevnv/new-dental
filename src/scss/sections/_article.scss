@@ -50,4 +50,48 @@
       }
     }
   }
+
+  &-section {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @include media(sm) {
+      gap: 20px;
+    }
+
+    &__img {
+
+      img {
+        display: block;
+        border-radius: 16px;
+      }
+
+      figcaption {
+        font-size: 14px;
+        line-height: 1.42;
+        margin-top: 10px;
+        color: var(--color-grey);
+      }
+
+    }
+
+    &__advice {
+      padding: 24px;
+      border-radius: 16px;
+      background: linear-gradient(262deg, #bdeeda 0%, #e7f1ef 81.5%);
+      font-size: 18px;
+      line-height: 1.44;
+
+      &-text {
+        max-width: 640px;
+      }
+
+      &-doctor {
+        margin-top: 24px;
+        font-weight: 700;
+      }
+    }
+  }
 }
