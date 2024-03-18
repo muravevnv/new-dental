@@ -18,6 +18,11 @@
 }
 
 .doctors-section {
+    display: none;
+
+    &.is-open {
+        display: block;
+    }
 
     + .doctors-section {
         --size: 56px;

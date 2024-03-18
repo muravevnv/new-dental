@@ -6,7 +6,7 @@ block content
 		.page-inner.section
 			.container 
 					h1.page__title.h1 Цены
-					.page-content
+					.page-content(data-filters)
 						.page-main 
 							.price 
 								.price__info 
@@ -19,24 +19,24 @@ block content
 										li Составляем несколько планов лечения по вашему бюджету.
 								.price__nav
 									.price__tabs.tab-controls
-										.price-nav__item.tab-control Все вместе
-										.price-nav__item.tab-control Взрослое отделение
-										.price-nav__item.tab-control Детская стоматология
+										.price-nav__item.tab-control(data-filter-control="all") Все вместе
+										.price-nav__item.tab-control(data-filter-control="adult") Взрослое отделение
+										.price-nav__item.tab-control(data-filter-control="kids") Детская стоматология
 									.price-categories 
-										.price-categories__item.link.link--dashed Общие мероприятия
-										.price-categories__item.link.link--dashed Диагностика
-										.price-categories__item.link.link--dashed Профилактика
-										.price-categories__item.link.link--dashed Хирургия
-										.price-categories__item.link.link--dashed Диагностика
-										.price-categories__item.link.link--dashed Ортопедия
-										.price-categories__item.link.link--dashed Ортодонтия
-										.price-categories__item.link.link--dashed Общие мероприятия
-										.price-categories__item.link.link--dashed Диагностика
-										.price-categories__item.link.link--dashed Профилактика
-										.price-categories__item.link.link--dashed Хирургия
-										.price-categories__item.link.link--dashed Диагностика
+										a(href="#section-1").price-categories__item.link.link--dashed.is-open(data-filter-panel="adult") Общие мероприятия
+										a(href="#section-1").price-categories__item.link.link--dashed.is-open(data-filter-panel="adult") Диагностика
+										a(href="#section-2").price-categories__item.link.link--dashed.is-open(data-filter-panel="kids") Профилактика
+										a(href="#section-1").price-categories__item.link.link--dashed.is-open(data-filter-panel="adult") Хирургия
+										a(href="#section-2").price-categories__item.link.link--dashed.is-open(data-filter-panel="kids") Диагностика
+										a(href="#section-1").price-categories__item.link.link--dashed.is-open(data-filter-panel="adult") Ортопедия
+										a(href="#section-2").price-categories__item.link.link--dashed.is-open(data-filter-panel="kids") Ортодонтия
+										a(href="#section-1").price-categories__item.link.link--dashed.is-open(data-filter-panel="adult") Общие мероприятия
+										a(href="#section-2").price-categories__item.link.link--dashed.is-open(data-filter-panel="kids") Диагностика
+										a(href="#section-2").price-categories__item.link.link--dashed.is-open(data-filter-panel="kids") Профилактика
+										a(href="#section-2").price-categories__item.link.link--dashed.is-open(data-filter-panel="kids") Хирургия
+										a(href="#section-1").price-categories__item.link.link--dashed.is-open(data-filter-panel="adult") Диагностика
 								.price__list
-									.price-section 
+									.price-section(id="section-1") 
 										.price-section__head Профессиональная гигиена
 										.price-section__body 
 											.price-section__table 
@@ -86,7 +86,7 @@ block content
 													.price-section__table-desc Ультразвук, Air-flow, полировка зубов пастами
 												.price-section__table-cell.price-section__table-cell-current 4 500₽
 												.price-section__table-cell.price-section__table-cell-all 5 800₽
-									.price-section 
+									.price-section(id="section-2") 
 										.price-section__head Профессиональная гигиена
 										.price-section__body 
 											.price-section__table 

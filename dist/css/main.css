@@ -300,6 +300,10 @@ html {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 *::before,
 *::after {
   -webkit-box-sizing: inherit;
@@ -2064,6 +2068,12 @@ ol li::before {
   margin-bottom: 56px;
 }
 
+.doctors-section {
+  display: none;
+}
+.doctors-section.is-open {
+  display: block;
+}
 .doctors-section + .doctors-section {
   --size: 56px;
   margin-top: var(--size);
@@ -2108,6 +2118,10 @@ ol li::before {
   font-size: 18px;
   line-height: 1.44;
   cursor: pointer;
+  display: none;
+}
+.price-categories__item.is-open {
+  display: block;
 }
 .price__list {
   display: -webkit-box;

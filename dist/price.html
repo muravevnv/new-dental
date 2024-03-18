@@ -164,7 +164,7 @@
       <div class="page-inner section">
         <div class="container"> 
           <h1 class="page__title h1">Цены</h1>
-          <div class="page-content">
+          <div class="page-content" data-filters>
             <div class="page-main"> 
               <div class="price"> 
                 <div class="price__info"> 
@@ -179,27 +179,14 @@
                 </div>
                 <div class="price__nav">
                   <div class="price__tabs tab-controls">
-                    <div class="price-nav__item tab-control">Все вместе</div>
-                    <div class="price-nav__item tab-control">Взрослое отделение</div>
-                    <div class="price-nav__item tab-control">Детская стоматология</div>
+                    <div class="price-nav__item tab-control" data-filter-control="all">Все вместе</div>
+                    <div class="price-nav__item tab-control" data-filter-control="adult">Взрослое отделение</div>
+                    <div class="price-nav__item tab-control" data-filter-control="kids">Детская стоматология</div>
                   </div>
-                  <div class="price-categories"> 
-                    <div class="price-categories__item link link--dashed">Общие мероприятия</div>
-                    <div class="price-categories__item link link--dashed">Диагностика</div>
-                    <div class="price-categories__item link link--dashed">Профилактика</div>
-                    <div class="price-categories__item link link--dashed">Хирургия</div>
-                    <div class="price-categories__item link link--dashed">Диагностика</div>
-                    <div class="price-categories__item link link--dashed">Ортопедия</div>
-                    <div class="price-categories__item link link--dashed">Ортодонтия</div>
-                    <div class="price-categories__item link link--dashed">Общие мероприятия</div>
-                    <div class="price-categories__item link link--dashed">Диагностика</div>
-                    <div class="price-categories__item link link--dashed">Профилактика</div>
-                    <div class="price-categories__item link link--dashed">Хирургия</div>
-                    <div class="price-categories__item link link--dashed">Диагностика</div>
-                  </div>
+                  <div class="price-categories"> <a class="price-categories__item link link--dashed is-open" href="#section-1" data-filter-panel="adult">Общие мероприятия</a><a class="price-categories__item link link--dashed is-open" href="#section-1" data-filter-panel="adult">Диагностика</a><a class="price-categories__item link link--dashed is-open" href="#section-2" data-filter-panel="kids">Профилактика</a><a class="price-categories__item link link--dashed is-open" href="#section-1" data-filter-panel="adult">Хирургия</a><a class="price-categories__item link link--dashed is-open" href="#section-2" data-filter-panel="kids">Диагностика</a><a class="price-categories__item link link--dashed is-open" href="#section-1" data-filter-panel="adult">Ортопедия</a><a class="price-categories__item link link--dashed is-open" href="#section-2" data-filter-panel="kids">Ортодонтия</a><a class="price-categories__item link link--dashed is-open" href="#section-1" data-filter-panel="adult">Общие мероприятия</a><a class="price-categories__item link link--dashed is-open" href="#section-2" data-filter-panel="kids">Диагностика</a><a class="price-categories__item link link--dashed is-open" href="#section-2" data-filter-panel="kids">Профилактика</a><a class="price-categories__item link link--dashed is-open" href="#section-2" data-filter-panel="kids">Хирургия</a><a class="price-categories__item link link--dashed is-open" href="#section-1" data-filter-panel="adult">Диагностика</a></div>
                 </div>
                 <div class="price__list">
-                  <div class="price-section"> 
+                  <div class="price-section" id="section-1"> 
                     <div class="price-section__head">Профессиональная гигиена</div>
                     <div class="price-section__body"> 
                       <div class="price-section__table"> </div>
@@ -268,7 +255,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="price-section"> 
+                  <div class="price-section" id="section-2"> 
                     <div class="price-section__head">Профессиональная гигиена</div>
                     <div class="price-section__body"> 
                       <div class="price-section__table"> </div>

@@ -221,3 +221,25 @@ if(headerCatalog) {
     })
   })
 }
+
+let filterBlock = document.querySelector('[data-filters]');
+
+if(filterBlock) {
+
+  let filterControls = filterBlock.querySelectorAll('[data-filter-control]');
+  let filterPanels = filterBlock.querySelectorAll('[data-filter-panel]');
+
+  filterControls.forEach((control) => {
+    control.addEventListener('click', () => {
+      filterControls.forEach(item => item.classList.remove('is-active'))
+      control.classList.add('is-active')
+
+      if(control.dataset.filterControl === 'all') {
+        filterPanels.forEach(item => item.classList.add('is-open'))
+      } else {
+        filterPanels.forEach(item => item.classList.remove('is-open'))
+        document.querySelectorAll(`[data-filter-panel="${control.dataset.filterControl}"]`).forEach(el => el.classList.add('is-open'))
+      }
+    })
+  })
+}

@@ -3,17 +3,17 @@ extends includes/_layout
 block content 
   main.page
     +breadcrumb(['Главная'],'Врачи')
-    .doctors.section 
+    .doctors.section(data-filters) 
         .container 
             h1.page__title.h1 Врачи
             .doctors__nav.tab-controls 
-                button(type="button").doctor-nav__item.tab-control Все
-                button(type="button").doctor-nav__item.tab-control Детское отделение (ул. Салютная, 26)
-                button(type="button").doctor-nav__item.tab-control Лечебное отделение (ул. Салютная, 26)
-                button(type="button").doctor-nav__item.tab-control Лечебное отделение (пр. Ленина, 3)
-                button(type="button").doctor-nav__item.tab-control Ортопедическое отделение (ул. Котина, 26)
-                button(type="button").doctor-nav__item.tab-control Зуботехническая лаб-я (ул.Котина,26)
-            .doctors-section 
+                button(type="button").doctor-nav__item.tab-control(data-filter-control="all") Все
+                button(type="button").doctor-nav__item.tab-control(data-filter-control="1") Детское отделение (ул. Салютная, 26)
+                button(type="button").doctor-nav__item.tab-control(data-filter-control="2") Лечебное отделение (ул. Салютная, 26)
+                button(type="button").doctor-nav__item.tab-control(data-filter-control="3") Лечебное отделение (пр. Ленина, 3)
+                button(type="button").doctor-nav__item.tab-control(data-filter-control="4") Ортопедическое отделение (ул. Котина, 26)
+                button(type="button").doctor-nav__item.tab-control(data-filter-control="5") Зуботехническая лаб-я (ул.Котина,26)
+            .doctors-section.is-open(data-filter-panel="1") 
                 .doctors-section__title.h2 Детское отделение (ул. Салютная, 26)
                 .doctors-section__list 
                     .team-item 
@@ -27,7 +27,7 @@ block content
                             img(src="images/team/team-02.jpg", alt="") 
                         a.team-item__name.link(href="#") Павпертова Эльза Эльдаровна
                         .team-item__type Врач-стоматолог-терапевт
-            .doctors-section 
+            .doctors-section.is-open(data-filter-panel="2") 
                 .doctors-section__title.h2 Лечебное отделение (ул. Салютная, 26)
                 .doctors-section__list 
                     .team-item 
@@ -63,7 +63,7 @@ block content
                             img(src="images/team/team-07.jpg", alt="") 
                         a.team-item__name.link(href="#") Павпертова Эльза Эльдаровна
                         .team-item__type Врач-стоматолог-терапевт
-            .doctors-section 
+            .doctors-section.is-open(data-filter-panel="3") 
                 .doctors-section__title.h2 Лечебное отделение (пр. Ленина, 3)
                 .doctors-section__list 
                     .team-item 
@@ -77,7 +77,7 @@ block content
                             img(src="images/team/team-02.jpg", alt="") 
                         a.team-item__name.link(href="#") Павпертова Эльза Эльдаровна
                         .team-item__type Врач-стоматолог-терапевт
-            .doctors-section 
+            .doctors-section.is-open(data-filter-panel="4") 
                 .doctors-section__title.h2 Ортопедическое отделение (ул. Котина, 26)
                 .doctors-section__list 
                     .team-item 
@@ -91,7 +91,7 @@ block content
                             img(src="images/team/team-02.jpg", alt="") 
                         a.team-item__name.link(href="#") Павпертова Эльза Эльдаровна
                         .team-item__type Врач-стоматолог-терапевт
-            .doctors-section 
+            .doctors-section.is-open(data-filter-panel="5") 
                 .doctors-section__title.h2 Зуботехническая лаб-я (ул.Котина,26)
                 .doctors-section__list 
                     .team-item 

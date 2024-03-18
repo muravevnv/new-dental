@@ -43,6 +43,11 @@
       font-size: 18px;
       line-height: 1.44;
       cursor: pointer;
+      display: none;
+
+      &.is-open {
+        display: block;
+      }
 
       @include media(sm)  {
         font-size: 16px;

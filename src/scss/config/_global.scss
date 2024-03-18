@@ -5,6 +5,10 @@ html {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 *::before,
 *::after {
   box-sizing: inherit;
