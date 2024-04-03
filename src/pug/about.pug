@@ -1,0 +1,111 @@
+extends includes/_layout
+
+block content 
+  main.page
+    +breadcrumb(['Главная'], 'О компании')
+    .about.section 
+      .container 
+        h1.page__title.h1 О компании
+        .about__content 
+          .about__info 
+            .about__info-title.h2 Миссия нашей стоматологии - лечить и помогать!
+            .about__info-text Компьютерная томография (КТ) зубов – это современный,
+              | информативный, неинвазивный метод исследования строения зубов, положения 
+              | их в челюсти, кровоснабжения тканей, выявления патологических 
+              | изменений зубочелюстной системы.
+            ol.about__info-list 
+              li Настоящая политика обработки персональных данных составлена 
+                | в соответствии с требованиями Федерального закона от 27.07.2006. 
+              li Блокирование персональных данных — временное прекращение обработки 
+                | персональных данных (за исключением случаев, если обработка 
+                | необходима для уточнения персональных данных);
+              li Информационная система персональных данных — совокупность 
+                | содержащихся в базах данных персональных данных, и обеспечивающих 
+                | их обработку информационных технологий и технических средств;
+              li Информационная система персональных данных — совокупность 
+                | содержащихся в базах данных персональных данных, и обеспечивающих 
+                | их обработку информационных технологий и технических средств;
+              li Информационная система персональных данных — совокупность 
+                | содержащихся в базах данных персональных данных, и обеспечивающих 
+                | их обработку информационных технологий и технических средств;
+          .about__img 
+            img(src="./images/about/about-01.png", alt="")
+    .about-advantages.section
+      .container 
+        .section__head
+          .about-advantages__title.section__title.h2 Наши преимущества
+        .about-advantages__list 
+          .about-advantages__item 
+            img(src="./images/about/a-about-01.svg", alt="")
+            span Лечим до 95% известных заболеваний зубов и ротовой полости
+          .about-advantages__item 
+            img(src="./images/about/a-about-02.svg", alt="")
+            span Большинство пациентов приходят к нам на приём по рекомендациям 
+          .about-advantages__item 
+            img(src="./images/about/a-about-03.svg", alt="")
+            span «Новая стоматология» лидер независимых экспертных рейтингов
+          .about-advantages__item 
+            img(src="./images/about/a-about-04.svg", alt="")
+            span Наши врачи – совладельцы клиник, лично гарантируют качество лечения
+        .about-advantages__img 
+          img(src="./images/about/about-02.png", alt="")
+    .contacts.section 
+      .container
+        h1.contacts__title.h1 Контакты
+        .contacts__content 
+          .contacts__map 
+            .contacts__map-wrap#map 
+          .contacts__info 
+            .contacts__clinics
+              .contacts-clinic 
+                  .contacts-clinic__img 
+                      img(src="images/default-clinic.png", alt="")
+                  .contacts-clinic__info 
+                      .contacts-clinic__name.link Клиника на Котина
+                      .contacts-clinic__adress Челябинск, ул. Котина, 26
+              .contacts-clinic 
+                  .contacts-clinic__img 
+                      img(src="images/default-clinic.png", alt="")
+                  .contacts-clinic__info 
+                      .contacts-clinic__name.link Клиника на Салютной
+                      .contacts-clinic__adress Челябинск, ул. Салютная, 26
+              .contacts-clinic 
+                  .contacts-clinic__img 
+                      img(src="images/default-clinic.png", alt="")
+                  .contacts-clinic__info 
+                      .contacts-clinic__name.link Клиника на Ленина
+                      .contacts-clinic__adress Челябинск, пр. Ленина, 3 (4 этаж)
+            .contacts__connect 
+                .contacts-item 
+                    +svgSprite(28, 28, 'tel')
+                    span.link +7 351 20-04-123
+                .contacts-item 
+                    +svgSprite(28, 28, 'mail')
+                    span.link +7 351 20-04-123
+                .contacts__socials.socials 
+                    a.socials__item(href="#") 
+                        +svgSprite(48, 48, 'vk')
+    .documents.section 
+      .container
+        .documents__wrapper 
+          .documents__title.h2 Документы 
+          .documents__main 
+            .documents__section 
+              .documents__section-title.h3 Клиника
+              .documents__list 
+                a.documents__item.link(href="#") Устав
+                a.documents__item.link(href="#") Приказ о назначении главного врача
+                a.documents__item.link(href="#") Сведения о реализуемых требованиях к защите персональных данных
+                a.documents__item.link(href="#") Политика в отношении обработки персональных данных
+                a.documents__item.link(href="#") Лицензии
+                a.documents__item.link(href="#") Свидетельство о регистрации
+                a.documents__item.link(href="#") Прием граждан
+                a.documents__item.link(href="#") Сводная ведомость результатов проведения специальной оценки условий труда
+            .documents__section 
+              .documents__section-title.h3 Пациентам
+              .documents__list 
+                a.documents__item.link(href="#") Цена услуг
+                a.documents__item.link(href="#") График работы врачей
+                a.documents__item.link(href="#") Материнский капитал
+                a.documents__item.link(href="#") Возврат подоходного налога
+    +feedback('feedback-doctor', 'feedback--secondary')

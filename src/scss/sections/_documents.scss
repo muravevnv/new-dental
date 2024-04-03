@@ -17,6 +17,19 @@
     }
   }
 
+  &__wrapper {
+    display: grid;
+    grid-template-columns: .8fr 1fr;
+
+    @include media(sm) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__title {
+    flex-shrink: 0;
+  }
+
   &__main {
     width: 100%;
   }
